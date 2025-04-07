@@ -11,5 +11,7 @@
 
 Investigar : SEO
 
-clase 1 : 
+clase 2 : 
 https://www.ole.com.ar/autos/atento-colapinto-hirakawa-dejo-alpine-piloto-reserva-haas_0_3BHbSiyUdM.html
+
+clase 3 : 

@@ -7,6 +7,10 @@ Repositorio : https://github.com/GabyDevOk/TalentoTech_Comi25013.git
 
 Canal Discord : https://discord.gg/gGytazZznj
 
+Aula Virtual : https://aulasvirtuales.bue.edu.ar/my/courses.php
+
+Mi curso de git y github para ustedes :  https://www.youtube.com/playlist?list=PL9FDV61UoWvKcoFMo3SRqo0Lu8HNGnVAz
+
 Comision 25013
 Clases Lunes 8 a 10 am
 ID ZOOM : 931 1040 4664
@@ -14,3 +18,5 @@ ID ZOOM : 931 1040 4664
 Consultas Front JS : Comision 25013
 a Partir de Miércoles, 9 de abril · 9:00 – 10:00am
 Enlace de la videollamada: https://meet.google.com/knd-oaus-ytc
+
+Mail tutora : maria.jader@bue.edu.ar

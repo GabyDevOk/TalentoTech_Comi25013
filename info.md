@@ -26,3 +26,7 @@ Clase 4 :
 Poner una lista de spotify con iframe en contactos
 
 invesytigar inputs, agregar en nuestra pagina inputs de tipo email
+
+
+Repaso 2: https://www.tycsports.com/automovilismo/a-doohan-se-le-acaba-el-tiempo-y-colapinto-es-cada-vez-mas-opcion-para-alpine-id652037.html
+

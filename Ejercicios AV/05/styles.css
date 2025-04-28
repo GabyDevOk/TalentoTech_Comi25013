@@ -1,0 +1,71 @@
+/* Archivo: styles.css */
+
+/* PASO 3: Aplicar la fuente externa (Roboto) a todo el sitio */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente personalizada */
+    margin: 0; /* Quitar márgenes */
+    padding: 0; /* Quitar relleno */
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+/* PASO 4: Estilizar el HEADER */
+header {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interno */
+    font-family: 'Roboto', sans-serif; /* Asegurarse de usar la fuente */
+}
+
+/* PASO 5: Estilizar el FOOTER */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 10px; /* Espaciado interno */
+    font-family: 'Roboto', sans-serif; /* Asegurarse de usar la fuente */
+}
+
+/* Estilizar los iconos de redes sociales en el footer */
+.social-icons a {
+    margin: 0 10px; /* Espaciado entre los iconos */
+    display: inline-block;
+}
+
+.social-icons img {
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Aumentar el tamaño al pasar el ratón */
+}
+
+/* PASO 6: Estilizar la barra de navegación */
+
+/* Eliminar viñetas de la lista */
+.nav-list {
+    list-style: none; /* Quita las viñetas de la lista */
+    background-color: #444; /* Fondo gris oscuro para el menú */
+    padding: 0; /* Quitar el espacio interno */
+    margin: 0; /* Quitar el espacio externo */
+    display: flex; /* Mostrar los elementos en fila */
+    justify-content: center; /* Centrar los elementos */
+}
+
+/* Estilos para cada ítem de la lista */
+.nav-list li {
+    margin: 0 15px; /* Separación horizontal entre los enlaces */
+}
+
+/* Estilos para los enlaces */
+.nav-list a {
+    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    color: white; /* Cambiar el color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px; /* Espaciado interno en los enlaces */
+}
+
+/* Opcional: Cambiar color cuando se pasa el mouse */
+.nav-list a:hover {
+    color: #FFD700; /* Color dorado al pasar el mouse */
+}

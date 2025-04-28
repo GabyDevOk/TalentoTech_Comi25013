@@ -1,0 +1,127 @@
+/* Establecer una fuente por defecto con Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para la barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para la sección de productos */
+#productos {
+    padding: 20px;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto {
+    text-align: center;
+    margin: 10px;
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Estilo para la sección de reseñas usando Grid */
+#reseñas {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.reseñas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el formulario de contacto */
+#contacto {
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para adaptabilidad en pantallas pequeñas */
+@media (max-width: 768px) {
+    .productos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reseñas-container {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 10px;
+    }
+}

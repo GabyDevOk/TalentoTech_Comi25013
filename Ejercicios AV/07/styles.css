@@ -1,0 +1,126 @@
+/* Reset de márgenes y bordes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Tipografía para todo el documento */
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+/* Estilo para la sección de Reseñas */
+.reseñas {
+    text-align: center; /* Centra el texto en la sección */
+    margin: 40px 0; /* Espaciado superior e inferior */
+}
+
+.reseñas h2 {
+    font-size: 2em; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Contenedor de las cards con Grid */
+.cards-container {
+    display: grid; /* Activamos el layout Grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Disposición responsiva de las cards */
+    gap: 20px; /* Espacio entre las cards */
+    padding: 20px; /* Relleno en el contenedor */
+}
+
+/* Estilo para cada card */
+.card {
+    background-color: white; /* Fondo blanco para las cards */
+    padding: 20px; /* Relleno dentro de las cards */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para las cards */
+.card:hover {
+    transform: translateY(-5px); /* Eleva las cards al pasar el ratón */
+}
+
+.card h3 {
+    font-size: 1.5em; /* Tamaño de fuente para los nombres */
+    color: #333; /* Color de texto para el nombre */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.card p {
+    color: #777; /* Color de texto para las reseñas */
+}
+
+/* Estilo para la sección de Contacto */
+.contacto {
+    margin: 40px 0; /* Espaciado superior e inferior */
+    padding: 20px; /* Relleno en la sección */
+    background-color: #fff; /* Fondo blanco para la sección */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.contacto h2 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para el formulario */
+.contacto form {
+    display: flex; /* Activamos flexbox para el formulario */
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+    gap: 15px; /* Espaciado entre los elementos del formulario */
+}
+
+.contacto label {
+    font-size: 1.1em; /* Tamaño de fuente para las etiquetas */
+    color: #333; /* Color de texto */
+}
+
+.contacto input, .contacto textarea {
+    padding: 10px; /* Relleno dentro de los campos */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente para los campos */
+}
+
+.contacto button {
+    padding: 10px; /* Relleno dentro del botón */
+    background-color: #4CAF50; /* Fondo verde para el botón */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+}
+
+.contacto button:hover {
+    background-color: #45a049; /* Cambia el color del botón al pasar el ratón */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustes en la disposición de las cards */
+    .reseñas .cards-container {
+        grid-template-columns: 1fr; /* Las cards se apilan en una sola columna */
+    }
+
+    /* Ajustes en el formulario para pantallas pequeñas */
+    .contacto {
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .contacto form {
+        gap: 10px; /* Reduce el espacio entre los elementos del formulario */
+    }
+
+    .contacto input, .contacto textarea {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente en los campos */
+        padding: 8px; /* Reduce el padding en los campos */
+    }
+
+    .contacto button {
+        padding: 8px; /* Reduce el padding en el botón */
+    }
+}

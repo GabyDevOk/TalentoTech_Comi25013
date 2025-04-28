@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de HTML y CSS</title>
+<link rel="stylesheet" href="style.css">
+    <!-- Importando fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado con la etiqueta header -->
+    <header>
+        <h1>Bienvenidos a Mi Sitio Web</h1>
+        <!-- Barra de navegación con enlaces a las secciones -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal de la página -->
+    <main>
+        <!-- Sección de inicio con imagen -->
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra tienda</h2>
+            <img src="https://picsum.photos/800/400" alt="Imagen de bienvenida">
+            <p>Explora nuestros productos exclusivos.</p>
+        </section>
+
+        <!-- Sección de productos con Flexbox -->
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="https://picsum.photos/150" alt="Producto 1">
+                    <p>Producto 1</p>
+                </div>
+                <div class="producto">
+                    <img src="https://picsum.photos/150" alt="Producto 2">
+                    <p>Producto 2</p>
+                </div>
+                <div class="producto">
+                    <img src="https://picsum.photos/150" alt="Producto 3">
+                    <p>Producto 3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de reseñas con Grid -->
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="reseñas-container">
+                <div class="card">
+                    <p>Reseña 1</p>
+                </div>
+                <div class="card">
+                    <p>Reseña 2</p>
+                </div>
+                <div class="card">
+                    <p>Reseña 3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto con formulario -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="link_forms_pre" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página con información -->
+    <footer>
+        <p>&copy; 2025 Mi Sitio Web</p>
+    </footer>
+</body>
+</html>

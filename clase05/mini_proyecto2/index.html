@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Indica que el idioma principal del sitio es inglés -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Permite usar caracteres especiales (como la ñ, acentos, etc.) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el diseño se adapte a celulares -->
+    <title>Mi Primer Sitio</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+
+<body> <!-- Cuerpo del sitio: todo el contenido visible -->
+
+    <header> <!-- Encabezado de la página -->
+        <div>
+            <!-- Logo que lleva al inicio -->
+            <a href="./index.html">
+                <img width="20%" src="https://images.cults3d.com/..." alt="logo de batman">
+            </a>
+        </div>
+
+        <h1 id="home">Bienvenido/a a Mi pagina</h1> <!-- Título principal -->
+
+        <nav> <!-- Menú de navegación -->
+            <ul>
+                <li><a href="#seccion1">Sobre Batman</a></li> <!-- Enlace a una sección de la misma página -->
+                <li><a href="#galeria">Galería</a></li> <!-- Enlace a otra sección -->
+                <li><a href="./paginas/contacto.html">Contacto</a></li> <!-- Enlace a otra página -->
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- Contenido principal -->
+
+        <section id="seccion1"> <!-- Sección sobre Batman -->
+            <article>
+                <h2>Todo Sobre Batman</h2> <!-- Subtítulo -->
+
+                <!-- Párrafo de texto explicando quién es Batman -->
+                <p><strong>Batman</strong> (en español: Hombre Murciélago) es un superhéroe ficticio de DC Comics...</p>
+
+                <!-- Otro párrafo, ahora mencionando su identidad secreta -->
+                <p>La identidad secreta de Batman es <strong>Bruce Wayne</strong>...
+                    <a href="https://es.wikipedia.org/wiki/Gotham_City" target="_blank" rel="noopener noreferrer">Gotham
+                        City</a>.
+                </p>
+
+                <!-- Párrafo final explicando su falta de superpoderes -->
+                <p>A diferencia de otros superhéroes, no tiene poderes: usa tecnología, inteligencia y entrenamiento...
+                </p>
+            </article>
+        </section>
+
+        <section id="galeria"> <!-- Sección de galería -->
+            <h2>Galería De Imágenes</h2>
+
+            <article>
+                <!-- Primera imagen -->
+                <figure>
+                    <img width="25%" src="https://bandai.com.mx/..." alt="Batman Afleck">
+                    <figcaption>Imagen de Batman Actor: Ben Afleck</figcaption>
+                </figure>
+
+                <!-- Segunda imagen -->
+                <figure>
+                    <img width="25%" src="./imagenes/logos.png" alt="logos batman">
+                    <figcaption>La evolución del logo de Batman</figcaption>
+                </figure>
+
+                <!-- Tercera imagen -->
+                <figure>
+                    <img width="25%" src="https://upload.wikimedia.org/..." alt="Batman cosplay">
+                    <figcaption>Batman cosplay</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <aside> <!-- Sección lateral: información extra -->
+            <p>Dato: Batman es un superhéroe de DC Comics <s>No es de Marvel</s> ¡es el mejor!</p>
+        </aside>
+
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <ul>
+            <!-- Logo que lleva a Wikipedia sobre Batman -->
+            <li>
+                <a href="https://es.wikipedia.org/wiki/Batman" target="_blank" rel="noopener noreferrer">
+                    <img width="10%" src="https://i.pinimg.com/..." alt="logo batman">
+                </a>
+            </li>
+            <li>Instagram</li> <!-- Texto suelto -->
+            <li><a href="#home">ARRIBA</a></li> <!-- Enlace para volver arriba -->
+        </ul>
+    </footer>
+
+</body>
+
+</html>

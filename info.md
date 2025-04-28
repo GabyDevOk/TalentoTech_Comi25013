@@ -30,3 +30,12 @@ invesytigar inputs, agregar en nuestra pagina inputs de tipo email
 
 Repaso 2: https://www.tycsports.com/automovilismo/a-doohan-se-le-acaba-el-tiempo-y-colapinto-es-cada-vez-mas-opcion-para-alpine-id652037.html
 
+Clase4 :
+contenido no relacionado vs contenido relacionado
+Diferencia de Aside vs 
+
+
+https://formspree.io/
+
+
+https://www.netlify.com/

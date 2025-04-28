@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define que el lenguaje de la página es inglés -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Permite usar caracteres especiales como tildes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el sitio sea responsive (se adapte a celulares) -->
+    <title>Contacto</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+
+<body> <!-- Cuerpo del sitio, donde va todo el contenido visible -->
+
+    <h1 id="home">Pagina de contacto</h1> <!-- Título principal, con un ID para poder hacer anclas -->
+
+    <header> <!-- Sección de encabezado -->
+        <div>
+            <!-- Logo con link que lleva a la página principal -->
+            <a href="./index.html">
+                <img width="20%" src="https://images.cults3d.com/..." alt="logo de batman">
+            </a>
+        </div>
+
+        <h1 id="home">Bienvenido/a a Mi pagina</h1> <!-- Otro título principal dentro del header -->
+
+        <nav> <!-- Menú de navegación -->
+            <ul> <!-- Lista de opciones -->
+                <li><a href="#seccion1">Sobre Batman</a></li> <!-- Link interno -->
+                <li><a href="#galeria">Galeria</a></li> <!-- Link interno -->
+                <li><a href="../index.html">Contacto</a></li> <!-- Link a otro archivo -->
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- Contenido principal de la página -->
+        <h2>Formulario de contacto</h2> <!-- Título secundario -->
+
+        <!-- Formulario de contacto que usa Formspree -->
+        <form action="https://formspree.io/f/{form_id}" method="post">
+            <!-- Campo para nombre -->
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Ingresa tu nombre">
+            <br><br>
+
+            <!-- Campo para email -->
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <!-- Campo para mensaje -->
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="40"></textarea> <!-- Área de texto grande -->
+            <br><br>
+
+            <!-- Menú desplegable para motivo de contacto -->
+            <label for="tema">Motivo de Contacto:</label>
+            <select name="tema" id="tema">
+                <option value="consulta">Consulta</option> <!-- value es lo que se envía realmente -->
+                <option value="sugerencia">Sugerencia</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Video de YouTube incrustado con iframe -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/789hEqi1I9I?si=0BKK5ecYgKG9wPHd"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <ul>
+            <!-- Link a Wikipedia que abre en una nueva pestaña -->
+            <li>
+                <a href="https://es.wikipedia.org/wiki/Batman" target="_blank" rel="noopener noreferrer">
+                    <img width="10%" src="https://i.pinimg.com/..." alt="logo batman">
+                </a>
+            </li>
+            <li>Instagram</li> <!-- Texto suelto -->
+            <li><a href="#home">ARRIBA</a></li> <!-- Botón para volver arriba -->
+        </ul>
+    </footer>
+
+</body>
+
+</html>

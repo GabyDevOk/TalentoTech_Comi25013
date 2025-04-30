@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="">
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <label for="user">Usuario/a</label>
+            <input type="text" name="user" id="user" required minlength="4" maxlength="10">
+            <br> <br>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" placeholder="Mas de 5 caracteres">
+            <br> <br>
+        </fieldset>
+        <label for="email">Correo Electronico</label>
+        <input type="email" name="email" id="email">
+        <br> <br>
+        <label for="color">Color Favorito</label>
+        <input type="color" name="color" id="color">
+        <br> <br>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" min="18" max="99">
+        <br> <br>
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" id="dni" pattern="[0-9]{8}" title="Debe tener 8 digitos">
+        <br><br>
+        <label for="file">CV</label>
+        <input type="file" name="file" id="file">
+        <br> <br>
+        <button type="reset">RESETEAR</button>
+        <button type="submit">ENVIAR</button>
+    </form>
+
+    <main>
+   <h2>Personas Registradas</h2>
+        <section>
+            <table border="1">  <!-- inicio la tabla --> <!-- tabla con borde -->
+                <tr>  <!-- table row = fila -->
+                    <th>User</th> <!-- table head= encabezado -->
+                    <th>email</th>
+                    <th>edad</th>
+                </tr>
+                <tr>
+                    <td>gabylancho</td>
+                    <td>gabrielmunoz.radio@gmail.com</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <td>gabylancho</td>
+                    <td>gabrielmunoz.radio@gmail.com</td>
+                    <td>39</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+</body>
+
+</html>

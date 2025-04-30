@@ -39,3 +39,10 @@ https://formspree.io/
 
 
 https://www.netlify.com/
+
+Clase Repaso 3
+expresión regular (pattern)
+
+tablas tamaño de celdas : 
+
+https://www.w3schools.com/

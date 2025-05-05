@@ -1,0 +1,54 @@
+/* selectores basicos */
+/* a: selector universal (*) */
+/* aplica a todos los elementos del HTML */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* b: selector de etiqueta (por ejemplo : h1,p) Especificidad = 1 punto */
+
+h1 {
+    /* 2 llaves */
+    color: red !important;
+    /* que queremos configurar : como? */
+}
+
+body {
+    background-color: aqua;
+}
+
+p {
+    color: blue;
+    background-color: yellow;
+}
+
+/* c: selector de clase (.nombre) Especificidad  = 10 pts */
+.destacado {
+    color: coral;
+    font-size: 25px;
+}
+
+.rojo {
+    color: red;
+}
+
+/* d. selector de ID (#nombre) Especificidad = 100 puntos */
+#titulo-principal {
+    color: blueviolet;
+}
+
+/*  especificidad */
+
+/*  .h4clase{
+    color: red;
+ }
+
+
+ h4{
+    color: chocolate;
+ }
+
+ #h4id{
+    color: blue;
+ }
+ */

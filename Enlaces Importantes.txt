@@ -1,22 +1,49 @@
 
-Youtube Canal https://youtube.com/playlist?list=PL9FDV61UoWvLpq7xEzwpppTMA7F4mijmX&si=BUfXY8m9-ItThJJb
+Material de la clase (Drive ):
+https://drive.google.com/drive/u/1/folders/1hUoY8CY-2rPcfn1qHBjkc29bd2dmnsS9 
 
-Drive : https://drive.google.com/drive/folders/1_Dpn9Fj02EpS-IGl5cTmqpPreq6v_UHl?usp=sharing
+Link Seguimiento Presentismo / Cuestionario:
+https://docs.google.com/spreadsheets/d/1FZElEJ776HV1DfGo4p6XU1ImBPhoyRx6b9YokjHjtto/edit?usp=sharing
 
-Repositorio : https://github.com/GabyDevOk/TalentoTech_Comi25013.git
+Lista Reproducción canal de YouTube:
+https://youtube.com/playlist?list=PL9FDV61UoWvLpq7xEzwpppTMA7F4mijmX&si=BUfXY8m9-ItThJJb
 
-Canal Discord : https://discord.gg/gGytazZznj
+YAPA para ustedes: Mi curso completo de Git y GitHub
+https://www.youtube.com/playlist?list=PL9FDV61UoWvKcoFMo3SRqo0Lu8HNGnVAz
 
-Aula Virtual : https://aulasvirtuales.bue.edu.ar/my/courses.php
+---
+Recordatorio importante:
 
-Mi curso de git y github para ustedes :  https://www.youtube.com/playlist?list=PL9FDV61UoWvKcoFMo3SRqo0Lu8HNGnVAz
+Subí a la carpeta todo lo relacionado con los Cuestionarios y Ejercicios del Aula Virtual.
+Todo el código que vemos está explicado paso a paso y super comentado.
 
-Comision 25013
-Clases Lunes 8 a 10 am
-ID ZOOM : 931 1040 4664
+---
+miércoles a las 9:00 hs en la clase de repaso:
+https://meet.google.com/knd-oaus-ytc
 
-Consultas Front JS : Comision 25013
-a Partir de Miércoles, 9 de abril · 9:00 – 10:00am
-Enlace de la videollamada: https://meet.google.com/knd-oaus-ytc
+---
+No se cuelguen con el Aula Virtual:
+https://aulasvirtuales.bue.edu.ar/my/courses.php
+Ahí están los cuestionarios obligatorios, material extra y ejercicios.
 
-Mail tutora : maria.jader@bue.edu.ar
+Todos los demás enlaces de interés están fijados acá en Discord y también en el Drive, en el archivo "enlaces importantes".
+
+---
+Contacto directo:
+Mi mail: gabriel.munoz@bue.edu.ar
+Mail de la tutora: maria.jader@bue.edu.ar
+
+---
+¿Seguimos conectados y hablando de programación?
+Me encantaría que me sigas y compartas tu experiencia en la cursada :speech_balloon:
+
+Mi LinkedIn: https://www.linkedin.com/in/gabriel-prof/
+Mi Instagram: https://www.instagram.com/gabriel_it_ok?igsh=MXNnaHpqbWx4MGJ4cA==
+
+También podés etiquetar a Talento Tech cuando publiques tu avance, ¡nos ayuda un montón!
+
+LinkedIn: https://www.linkedin.com/company/agenciadehabilidades/
+Instagram: https://www.instagram.com/agenciadehabilidades?igsh=MWQ1azluY3QwazVkaA==
+
+---
+¡Abrazo grande y seguimos! 

@@ -46,3 +46,8 @@ expresión regular (pattern)
 tablas tamaño de celdas : 
 
 https://www.w3schools.com/
+
+Clase 06
+psicologia del color
+intro : UX - UI
+

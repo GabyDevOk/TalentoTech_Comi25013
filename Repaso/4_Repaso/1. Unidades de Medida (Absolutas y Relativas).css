@@ -1,0 +1,44 @@
+/*  (tamaño base) */
+/* html {
+    font-size: 16px; 
+} */
+
+
+/* 1.5 veces el tamaño base, es decir 24px */
+/* p{
+    font-size: 1.5rem; 
+    background-color: blue;
+    color: aliceblue;
+
+} */
+
+/* un ancho de 100 pixeles */
+/* una altura de 50milimetros */
+/* div{
+    width: 100px; 
+    height: 50mm; 
+    background-color: blue;
+    color: aliceblue;
+} */
+
+body{
+    background-color: blue;
+}
+
+/* Unidades Absolutas */
+.absolutas{
+ width: 200px; /* fija el ancho en 200 pixeles */
+ height: 100mm; /* la altura es de 100 milimetros */
+ background-color: lightblue;
+ margin-bottom: 20px;
+}
+
+/* Unidades Relativas  */
+.relativas{ 
+ width: 50%;/*  la anchura es el 50% del contenedor padre   */
+ height: 50vh; /*la altura es el 50% del viewport (pantalla visible) */
+ background-color: lightgreen;
+}
+
+
+

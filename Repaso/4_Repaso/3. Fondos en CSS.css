@@ -1,0 +1,32 @@
+/* Color de fondo */
+/* body{
+    background-color: #334466;
+} */
+
+/* imagen de fondo */
+
+/* div{
+    border:1px,solid, red;
+    width: 50vw;
+    height: 50vh;
+    background-image: url("./fondo.jpg");
+    background-size: contain;
+} */
+
+/* background-size: cover; la imagen cubra todo el div */
+
+
+.fondo-color{
+    background-color: #ffd700;
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+.fondo-imagen {
+    background-image: url("https://placehold.co/600x200");
+/*     https://picsum.photos/200/300 */
+    background-size: cover;
+    height: 200px;
+    color:white;
+    padding: 20px;
+}

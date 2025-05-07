@@ -1,0 +1,25 @@
+/* definir colores en css
+Nombre: se utilizan palabras clave, como red, blue, green.
+Hexadecimal : se representan con un condigo hexadxecimal , como #ff5733
+RGB: Define los colores mediante los valores, rojo , verde y azul. Ejemplo (255,0,0)
+RGBA : Añade un cuarto valor llamado Alpha que controla la transparencia Ejemplo (255,0,0,0.5)
+
+
+ */
+
+/*  body {
+    background-color: #ff5733;
+    color : rgba(0, 0, 0, 0.99)
+ } */
+
+ .color-nombre {
+    color : red
+ }
+
+ .color-rgb{
+    color:rgb(0,128,0)
+ }
+
+ .color-rgba{
+    color:rgba(0, 128, 255, 0.5)
+ }

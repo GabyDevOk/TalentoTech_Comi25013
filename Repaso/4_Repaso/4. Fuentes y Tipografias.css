@@ -1,0 +1,23 @@
+
+
+/* font-size : define el tamaño de la fuente
+font-family : define la familia tipografia que se usara
+font-weight : define el groson del texto */
+/* 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight: bold;
+} */
+
+body{
+    font-family: "Roboto", sans-serif;
+    color:#333
+}
+.titulo {
+    font-size: 36px;
+    font-weight: 700;
+}
+.parrafo {
+    font-style: italic;
+}

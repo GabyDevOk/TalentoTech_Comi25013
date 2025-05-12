@@ -1,0 +1,8 @@
+/* 🔹 Estilos para el texto de los párrafos */
+p {
+  font-family: "Montserrat", sans-serif;  /* Se aplica la fuente "Montserrat". Si no está disponible, usa una genérica sans-serif */
+  font-size: 18px;                         /* Tamaño del texto en píxeles */
+  font-weight: bold;                      /* Grosor de la letra: "bold" es negrita */
+  font-style: italic;                     /* Estilo del texto: italic (cursiva) */
+  text-align: center;                     /* Alinea el texto al centro del contenedor */
+}

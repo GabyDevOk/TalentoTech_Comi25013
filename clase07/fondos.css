@@ -1,0 +1,25 @@
+/* 🔹 Fondo de color para una sección */
+section {
+  background-color: lightblue;   /* Le damos un color celeste claro como fondo */
+  width: 50vw;                   /* El ancho ocupa el 50% del ancho total de la ventana (viewport width) */
+  height: 50vh;                  /* La altura ocupa el 50% de la altura de la ventana (viewport height) */
+}
+
+/* 🔹 Imagen de fondo para toda la página */
+body {
+  background-image: url(./xp.jpg);       /* Se coloca una imagen de fondo (puede ser local o externa) */
+  /* También podés usar una imagen externa:
+     background-image: url(https://erikstore.com/blog/wp-content/uploads/2023/09/Batman-day-origen-980x592.webp); */
+
+  background-size: contain;              /* La imagen se ajusta para verse entera sin recortarse (aunque no cubra todo el fondo) */
+
+  background-repeat: no-repeat;          /* Evita que la imagen se repita como mosaico */
+
+  background-position: top left;         /* Coloca la imagen alineada arriba a la izquierda */
+}
+
+/* 📌 Notas extra:
+   - También podés usar otras posiciones como: top, bottom, right, center.
+   - Para cubrir toda la pantalla con la imagen podés usar: background-size: cover;
+   - Si la imagen tiene transparencia, se puede combinar con background-color debajo.
+*/

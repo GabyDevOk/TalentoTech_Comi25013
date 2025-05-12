@@ -1,0 +1,52 @@
+/* css permite utilizar diferentes formatos para definir colores */
+p {
+  color: red;
+}
+/* ✅ Usamos una **palabra clave** para definir un color.
+   En este caso, "red" es un nombre reconocido por CSS (como "blue", "green", "black"...).
+   Es una forma rápida y simple de aplicar colores básicos a textos. */
+
+h1 {
+  color: #796c86;
+}
+/* ✅ Usamos un **color hexadecimal**.
+   Está compuesto por 3 pares de caracteres:
+   - '79' para el rojo,
+   - '6c' para el verde,
+   - '86' para el azul.
+   Este formato nos da **colores más precisos** y es muy usado en diseño web. */
+
+
+/* hexadecimales */
+div {
+  background-color: rgb(255, 0, 0);
+  width: 30vw; 
+  height: 30vh;
+}
+/* ✅ Usamos formato **RGB**: red, green, blue.
+   - 255 = rojo al máximo,
+   - 0 = nada de verde,
+   - 0 = nada de azul.
+   Resultado: rojo puro.
+   Además, usamos:
+   - width: 30vw → el div ocupa el 30% del ancho de la pantalla.
+   - height: 30vh → el div ocupa el 30% de la altura de la pantalla. */
+
+.caja2 {
+  background-color: rgba(255, 0, 0, 0.5);
+  width: 30vw; 
+  height: 30vh;
+}
+/* ✅ Usamos formato **RGBA**, que agrega el canal alpha:
+   - Los 3 primeros valores son como en RGB.
+   - El último (0.5) es la opacidad (de 0 = transparente a 1 = opaco).
+   Resultado: un rojo semitransparente.
+   Es útil cuando queremos superponer colores con efectos suaves. */
+
+   /* body {
+  background-color: #f5f5f5;
+} */
+/* ✅ Esto define un color de fondo para toda la página.
+   En este caso, es un gris muy clarito (casi blanco).
+
+

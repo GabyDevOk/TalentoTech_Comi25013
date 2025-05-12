@@ -1,0 +1,62 @@
+/* 🔸 UNIDADES ABSOLUTAS
+   Son fijas. No cambian según el tamaño de pantalla o dispositivo. */
+
+h1 {
+  font-size: 24px;  /* El texto siempre va a medir 24 píxeles, sin importar el dispositivo. */
+}
+
+/* Otras unidades absolutas:
+   cm (centímetros), mm (milímetros), in (pulgadas) → más comunes en diseño para impresión,
+   no recomendadas para diseño web moderno. */
+
+
+
+
+/* 🔸 UNIDADES RELATIVAS
+   Se adaptan al contexto, como el tamaño de fuente del padre o del elemento <html>.
+   Muy útiles para diseño adaptable (responsive). */
+
+html {
+  font-size: 20px;  /* Definimos el tamaño base: 20px */
+}
+
+p {
+  font-size: 1.5rem;   /* 1.5 veces el tamaño base del <html> → 1.5 * 20px = 30px */
+  /* Si cambiamos el font-size del <html>, todos los textos en rem se adaptan automáticamente. */
+}
+
+/* ✅ Diferencias entre em y rem:
+   - em: relativo al padre (puede heredar tamaños acumulativos).
+   - rem: relativo al <html> (más predecible para diseños escalables). */
+
+
+
+
+/* 🔸 UNIDADES FLEXIBLES: vw y vh
+   Se basan en el tamaño de la ventana (viewport).
+   Muy útiles para hacer que los elementos se adapten al tamaño de pantalla. */
+
+div {
+  width: 70vw;               /* El div ocupa el 70% del ancho de la pantalla */
+  height: 30vh;              /* El div ocupa el 30% de la altura de la pantalla */
+  background-color: blue;    /* Fondo azul para diferenciar visualmente */
+}
+
+.div2 {
+  width: 30vw;               /* Otro div más pequeño: 30% del ancho */
+  height: 30vh;              /* Igual altura: 30% del alto */
+  background-color: red;     /* Fondo rojo para diferenciar */
+}
+
+/* ✅ ¿Qué significa?
+   - 1vw = 1% del ancho de la pantalla (viewport width)
+   - 1vh = 1% del alto de la pantalla (viewport height)
+   Con estas unidades, el diseño se adapta automáticamente en distintos dispositivos. */
+
+
+
+
+
+
+
+

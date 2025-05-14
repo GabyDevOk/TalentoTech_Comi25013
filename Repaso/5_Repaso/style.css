@@ -1,0 +1,77 @@
+/* 1. UNIDADES DE MEDIDA */
+
+/* ✅ Unidad absoluta: no cambia con el tamaño de la pantalla */
+.absoluta {
+  font-size: 24px;           /* Tamaño fijo de texto: 24 píxeles */
+}
+
+/* ✅ Unidad relativa: se adapta al tamaño base del <html> */
+.relativa {
+  font-size: 1.5rem;         /* 1.5 veces el tamaño de fuente del elemento raíz (html) */
+}
+
+/* ✅ Unidades flexibles: se basan en el tamaño del viewport (pantalla) */
+.flexible {
+  width: 50vw;               /* 50% del ancho de la pantalla */
+  height: 30vh;              /* 30% del alto de la pantalla */
+  background-color: lightgray; /* Fondo gris claro */
+  margin-top: 10px;          /* Separación superior de 10px */
+}
+
+/* 2. COLORES */
+
+/* ✅ Palabra clave para color */
+.palabra_clave {
+  color: red;                /* Texto en rojo (palabra clave básica) */
+}
+
+/* ✅ Color hexadecimal */
+.hex {
+  color: #3498db;            /* Texto azul claro (en formato HEX) */
+}
+
+/* ✅ Color con transparencia usando RGBA */
+.rgba {
+  background-color: rgba(255, 0, 0, 0.5); /* Rojo con 50% de opacidad */
+  padding: 10px;            /* Espacio interno de 10px */
+}
+
+/* 3. FONDOS */
+
+/* ✅ Fondo de color plano */
+.fondo-color {
+  background-color: lightblue; /* Fondo celeste */
+  padding: 10px;               /* Espacio interno */
+}
+
+/* ✅ Fondo con imagen */
+.fondo-imagen {
+  background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/06/capitan-tsubasa-1968057.jpg?tf=1920x'); /* Imagen de fondo (desde internet) */
+  background-size: cover;      /* La imagen se ajusta para cubrir todo el contenedor */
+  background-repeat: no-repeat; /* No se repite la imagen */
+  height: 100px;               /* Alto fijo de 100px */
+  margin-top: 10px;            /* Separación desde el elemento anterior */
+}
+
+/* 4. TIPOGRAFÍA */
+
+/* ✅ Tipografía general del sitio */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente principal 'Roboto', con respaldo sans-serif */
+}
+
+/* ✅ Estilos aplicados a un texto */
+.estilos-tipografia {
+  font-size: 18px;            /* Tamaño de fuente */
+  font-weight: bold;          /* Negrita */
+  font-style: italic;         /* Cursiva */
+  text-align: center;         /* Alineación centrada */
+}
+
+/* 5. ÍCONOS */
+
+/* ✅ Estilos para íconos (por ejemplo, de Font Awesome) */
+.iconos i {
+  color: crimson;             /* Color rojo intenso */
+  font-size: 24px;            /* Tamaño de ícono */
+}

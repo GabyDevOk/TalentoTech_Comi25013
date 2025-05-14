@@ -51,3 +51,8 @@ Clase 06
 psicologia del color
 intro : UX - UI
 
+
+Repaso 5
+https://fonts.google.com/
+https://fontawesome.com/
+

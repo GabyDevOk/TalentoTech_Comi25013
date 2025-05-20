@@ -1,127 +1,121 @@
-/* Establecer una fuente por defecto con Google Fonts */
+/* Fuente predeterminada del sitio */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif; /* Fuente importada desde Google Fonts */
+  margin: 0;                          /* Elimina márgenes del navegador */
+  padding: 0;                         /* Elimina relleno por defecto */
 }
 
-/* Estilo para el header */
+/* Estilo para el encabezado de la página */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #4CAF50; /* Fondo verde */
+  color: white;              /* Texto blanco */
+  padding: 20px;             /* Espacio interior */
+  text-align: center;        /* Centra el texto */
 }
 
-/* Estilo para la barra de navegación */
+/* Navegación en forma de lista horizontal */
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+  list-style: none;          /* Elimina viñetas */
+  padding: 0;                /* Elimina relleno */
+  display: flex;             /* Activa Flexbox */
+  justify-content: center;   /* Centra los elementos horizontalmente */
+  gap: 20px;                 /* Espacio entre los ítems de la lista */
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
+/* Enlaces del menú */
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;              /* Texto blanco */
+  text-decoration: none;     /* Sin subrayado */
+  font-weight: bold;         /* Negrita */
 }
 
-/* Estilo para la sección de productos */
-#productos {
-    padding: 20px;
+/* Estilo general para todas las secciones */
+section {
+  padding: 20px;             /* Espacio interior */
+  text-align: center;        /* Centra el texto */
 }
 
+/* Contenedor de los productos con Flexbox */
 .productos-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;             /* Activa Flexbox */
+  justify-content: center;   /* Centra horizontalmente */
+  gap: 20px;                 /* Espacio entre productos */
+  flex-wrap: wrap;           /* Permite que bajen a otra línea en pantallas pequeñas */
+  margin-top: 20px;          /* Espacio superior */
 }
 
+/* Cada tarjeta de producto */
 .producto {
-    text-align: center;
-    margin: 10px;
+  text-align: center;        /* Centra el contenido */
 }
 
+/* Imágenes de los productos */
 .producto img {
-    width: 150px;
-    height: 150px;
-}
-
-/* Estilo para la sección de reseñas usando Grid */
-#reseñas {
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.reseñas-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;              /* Ancho fijo */
+  height: 150px;             /* Alto fijo */
+  object-fit: cover;         /* Cubre el área sin deformarse */
 }
 
 /* Estilo para el formulario de contacto */
-#contacto {
-    padding: 20px;
-}
-
 form {
-    display: grid;
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
+  display: flex;             /* Activa Flexbox */
+  flex-direction: column;    /* Coloca los elementos en columna */
+  gap: 10px;                 /* Espacio entre campos */
+  max-width: 400px;          /* Ancho máximo */
+  margin: 0 auto;            /* Centrado horizontal */
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* Campos del formulario */
+input, textarea {
+  padding: 10px;             /* Espacio interior */
+  border: 1px solid #ccc;    /* Borde gris claro */
+  border-radius: 4px;        /* Bordes redondeados */
 }
 
-form button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* Botón del formulario */
+button {
+  padding: 10px;             /* Espacio interior */
+  background-color: #4CAF50; /* Fondo verde */
+  color: white;              /* Texto blanco */
+  border: none;              /* Sin borde */
+  border-radius: 4px;        /* Bordes redondeados */
+  cursor: pointer;           /* Cambia el cursor al pasar por encima */
 }
 
-/* Estilo para el footer */
+/* Estilo para el pie de página */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;    /* Fondo oscuro */
+  color: white;              /* Texto blanco */
+  text-align: center;        /* Centrado de texto */
+  padding: 15px;             /* Espacio interior */
+  margin-top: 30px;          /* Separación del contenido anterior */
 }
 
-/* Media Queries para adaptabilidad en pantallas pequeñas */
-@media (max-width: 768px) {
-    .productos-container {
-        flex-direction: column;
-        align-items: center;
-    }
+/* ------------------ MEDIA QUERIES ------------------ */
 
-    .reseñas-container {
-        grid-template-columns: 1fr;
-    }
+/* Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;  /* Muestra los enlaces uno debajo del otro */
+    gap: 10px;               /* Menor espacio entre ellos */
+  }
 
-    form {
-        padding: 10px;
-    }
+  .productos-container {
+    flex-direction: column;  /* Apila los productos en una columna */
+    align-items: center;     /* Centra verticalmente */
+  }
+}
+
+/* Media Query para TABLETS (de 601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .productos-container {
+    justify-content: space-evenly; /* Distribuye los productos uniformemente */
+  }
+}
+
+/* Media Query para PC (más de 1024px) */
+@media (min-width: 1025px) {
+  .productos-container {
+    justify-content: space-between; /* Aumenta el espacio entre productos */
+  }
 }

@@ -1,92 +1,77 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Indica el tipo de documento HTML -->
+<html lang="es"> <!-- El idioma principal del contenido es español -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto de HTML y CSS</title>
-<link rel="stylesheet" href="style.css">
-    <!-- Importando fuente de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive -->
+  <title>Proyecto Flexbox Responsive</title> <!-- Título que se muestra en la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Vincula la hoja de estilos externa -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente Roboto desde Google Fonts -->
 </head>
+
 <body>
-    <!-- Encabezado con la etiqueta header -->
-    <header>
-        <h1>Bienvenidos a Mi Sitio Web</h1>
-        <!-- Barra de navegación con enlaces a las secciones -->
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Encabezado principal del sitio -->
+  <header>
+    <h1>Mi Sitio Web</h1> <!-- Título del sitio web -->
+    <nav> <!-- Navegación principal -->
+      <ul>
+        <li><a href="#inicio">Inicio</a></li> <!-- Enlace a la sección de inicio -->
+        <li><a href="#productos">Productos</a></li> <!-- Enlace a la sección de productos -->
+        <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Sección principal de la página -->
-    <main>
-        <!-- Sección de inicio con imagen -->
-        <section id="inicio">
-            <h2>Bienvenidos a nuestra tienda</h2>
-            <img src="https://picsum.photos/800/400" alt="Imagen de bienvenida">
-            <p>Explora nuestros productos exclusivos.</p>
-        </section>
+  <!-- Contenido principal del sitio -->
+  <main>
+    <!-- Sección de bienvenida -->
+    <section id="inicio">
+      <h2>Bienvenidos</h2> <!-- Título de la sección -->
+      <img src="https://picsum.photos/800/400" alt="Imagen bienvenida"> <!-- Imagen decorativa -->
+      <p>Descubrí nuestros productos exclusivos.</p> <!-- Texto introductorio -->
+    </section>
 
-        <!-- Sección de productos con Flexbox -->
-        <section id="productos">
-            <h2>Productos</h2>
-            <div class="productos-container">
-                <div class="producto">
-                    <img src="https://picsum.photos/150" alt="Producto 1">
-                    <p>Producto 1</p>
-                </div>
-                <div class="producto">
-                    <img src="https://picsum.photos/150" alt="Producto 2">
-                    <p>Producto 2</p>
-                </div>
-                <div class="producto">
-                    <img src="https://picsum.photos/150" alt="Producto 3">
-                    <p>Producto 3</p>
-                </div>
-            </div>
-        </section>
+    <!-- Sección de productos -->
+    <section id="productos">
+      <h2>Productos</h2> <!-- Título de la sección -->
+      <div class="productos-container"> <!-- Contenedor de los productos -->
+        <div class="producto"> <!-- Primer producto -->
+          <img src="https://picsum.photos/150" alt="Producto 1"> <!-- Imagen del producto -->
+          <p>Producto 1</p> <!-- Descripción del producto -->
+        </div>
+        <div class="producto"> <!-- Segundo producto -->
+          <img src="https://picsum.photos/150" alt="Producto 2">
+          <p>Producto 2</p>
+        </div>
+        <div class="producto"> <!-- Tercer producto -->
+          <img src="https://picsum.photos/150" alt="Producto 3">
+          <p>Producto 3</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Sección de reseñas con Grid -->
-        <section id="reseñas">
-            <h2>Reseñas</h2>
-            <div class="reseñas-container">
-                <div class="card">
-                    <p>Reseña 1</p>
-                </div>
-                <div class="card">
-                    <p>Reseña 2</p>
-                </div>
-                <div class="card">
-                    <p>Reseña 3</p>
-                </div>
-            </div>
-        </section>
+    <!-- Sección de contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2> <!-- Título de la sección -->
+      <form action="#" method="POST"> <!-- Formulario de contacto -->
+        <label for="nombre">Nombre:</label> <!-- Etiqueta para el nombre -->
+        <input type="text" id="nombre" name="nombre" required> <!-- Campo de texto obligatorio -->
 
-        <!-- Sección de contacto con formulario -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="link_forms_pre" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo electrónico:</label> <!-- Etiqueta para correo -->
+        <input type="email" id="correo" name="correo" required> <!-- Campo de email obligatorio -->
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
+        <label for="mensaje">Mensaje:</label> <!-- Etiqueta para el mensaje -->
+        <textarea id="mensaje" name="mensaje" required></textarea> <!-- Área de texto obligatorio -->
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button> <!-- Botón de envío -->
+      </form>
+    </section>
+  </main>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Pie de página con información -->
-    <footer>
-        <p>&copy; 2025 Mi Sitio Web</p>
-    </footer>
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Mi Sitio Web</p> <!-- Derechos de autor -->
+  </footer>
 </body>
+
 </html>

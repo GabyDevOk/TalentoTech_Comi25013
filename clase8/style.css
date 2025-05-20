@@ -1,0 +1,99 @@
+/* 1. Modelo de caja */
+.caja-ejemplo {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+/* 2. Posicionamiento */
+.static {
+    position: static;
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+.relative {
+    position: relative;
+    left: 20px;
+    background-color: lightskyblue;
+    margin: 10px;
+}
+
+.absolute-container {
+    position: relative;
+    height: 100px;
+    border: 1px dashed gray;
+    margin: 10px;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: pink;
+    padding: 5px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 5px;
+    z-index: 999;
+}
+
+.sticky-container {
+    height: 200px;
+    margin-top: 20px;
+    overflow: auto;
+    border: 1px solid gray
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: lightsalmon;
+    padding: 5px;
+}
+
+/* 
+3. selectores avanzados */
+.padre p {
+    color: red;
+}
+
+.padre >.hijo {
+    color: blue;
+}
+
+.hermana1+.hermano2 {
+    font-weight: bold;
+
+}
+
+.hermana1~.hermano2 {
+    text-decoration: underline;
+}
+
+.contenedor-flex{
+    display:flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border:1px solid black;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.item{
+    background-color:blueviolet;
+    padding: 10px;
+    margin:5px;
+    flex-grow: 1;
+    flex-basis: 100px;
+}

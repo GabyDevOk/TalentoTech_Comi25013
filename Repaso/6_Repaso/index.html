@@ -1,70 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Define el idioma del documento como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Pre-Entrega</title>
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite un diseño responsive en dispositivos móviles -->
+  <title>Clase CSS - Modelo de Caja, Posicionamiento y Flexbox</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
 </head>
 <body>
-<header>
-    <h1>Mi Sitio Web</h1>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section id="inicio">
-        <h2>Bienvenid@s</h2>
-        <img src="https://picsum.photos/800/400" alt="imagen de bienvenida">
-        <p>Descrubrì nuestro productos exclusivos</p>
-    </section>
+  <header>
+    <h1>Clase CSS: Modelo de Caja, Posicionamiento y Flexbox</h1> <!-- Título principal de la página -->
+  </header>
 
-    <section id="productos">
-        <h2>Productos</h2>
-        <div class="productos-container">
-            <div class="producto">
-                <img src="https://picsum.photos/150" alt="producto 1">
-                <p>Producto 1</p>
-            </div>
-               <div class="producto">
-                <img src="https://picsum.photos/150" alt="producto 2">
-                <p>Producto 2</p>
-            </div>
-               <div class="producto">
-                <img src="https://picsum.photos/150" alt="producto 3">
-                <p>Producto 3</p>
-            </div>
-            
-            
-        </div>
-    </section>
+  <section class="modelo-caja"> <!-- Sección para el modelo de caja -->
+    <h2>1. Modelo de Caja</h2> <!-- Subtítulo de la sección -->
+    <div class="caja-ejemplo">
+      Este es un ejemplo del modelo de caja. <!-- Contenido dentro de una caja con estilo -->
+    </div>
+  </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required>
+  <section class="posicionamiento"> <!-- Sección dedicada a los tipos de posicionamiento -->
+    <h2>2. Posicionamiento</h2> <!-- Subtítulo -->
+    <div class="static">Posición Static (por defecto)</div> <!-- Caja con posición estática -->
+    <div class="relative">Posición Relative</div> <!-- Caja con posición relativa -->
+    <div class="absolute-container"> <!-- Contenedor necesario para que funcione posición absoluta correctamente -->
+      <div class="absolute">Posición Absolute</div> <!-- Elemento con posición absoluta dentro del contenedor -->
+    </div>
+    <div class="fixed">Posición Fixed (quedará fija al hacer scroll)</div> <!-- Elemento que permanece fijo en pantalla -->
+    <div class="sticky-container"> <!-- Contenedor para probar posición sticky -->
+      <div class="sticky">Posición Sticky</div> <!-- Elemento que se pega arriba al hacer scroll -->
+      <p style="height: 300px;">Espacio de scroll para probar sticky</p> <!-- Espacio para probar sticky al hacer scroll -->
+    </div>
+  </section>
 
-            <label for="correo">Correo Electronico</label>
-            <input type="email" name="correo" id="correo" required>
+  <section class="selectores"> <!-- Sección que muestra selectores avanzados -->
+    <h2>3. Selectores Avanzados</h2>
+    <div class="padre"> <!-- Elemento padre -->
+      <div class="hijo">Hijo directo</div> <!-- Hijo directo del padre -->
+      <p>Descendiente</p> <!-- Otro descendiente, no necesariamente hijo directo -->
+      <span class="hermano1">Hermano 1</span> <!-- Elemento hermano -->
+      <span class="hermano2">Hermano 2</span> <!-- Hermano adyacente y general de hermano1 -->
+    </div>
+  </section>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-</main>
-<footer>
-    <p> &copy; 2025 Mi sitio Web</p>
-</footer>
+  <section class="flexbox"> <!-- Sección para ejemplos de Flexbox -->
+    <h2>4 y 5. Flexbox y Propiedades</h2>
+    <div class="contenedor-flex"> <!-- Contenedor con display: flex -->
+      <div class="item">Item 1</div> <!-- Ítem del contenedor flex -->
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </section>
 </body>
 </html>

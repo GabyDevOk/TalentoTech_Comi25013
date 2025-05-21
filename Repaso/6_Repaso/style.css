@@ -1,115 +1,98 @@
-body {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
+/* === 1. MODELO DE CAJA === */
+.caja-ejemplo {
+  width: 200px; /* Ancho fijo de la caja */
+  height: 100px; /* Alto fijo de la caja */
+  padding: 20px; /* Espacio interno entre el contenido y el borde */
+  border: 2px solid black; /* Borde sólido negro de 2 píxeles */
+  margin: 20px; /* Espacio externo alrededor de la caja */
+  background-color: lightyellow; /* Color de fondo amarillo claro */
 }
 
-header {
-    background-color: #2ecc71;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* === 2. POSICIONAMIENTO === */
+.static {
+  position: static; /* Posicionamiento por defecto (flujo normal del documento) */
+  background-color: lightgray; /* Fondo gris claro */
+  margin: 10px; /* Espacio externo alrededor del elemento */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px
+.relative {
+  position: relative; /* Posición relativa al lugar original en el flujo */
+  left: 20px; /* Desplaza el edivlemento 20px hacia la derecha desde su posición original */
+  background-color: lightblue; /* Fondo celeste */
+  margin: 10px; /* Espacio externo alrededor del elemento */
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.absolute-container {
+  position: relative; /* Contenedor relativo necesario para posicionar hijos con posición absoluta */
+  height: 100px; /* Altura fija */
+  border: 1px dashed gray; /* Borde gris punteado */
+  margin: 10px; /* Espacio externo alrededor del contenedor */
 }
 
-section {
-    padding: 20px;
-    text-align: center;
+.absolute {
+  position: absolute; /* Posición absoluta respecto al contenedor relativo más cercano */
+  top: 0; /* Pegado al borde superior del contenedor */
+  right: 0; /* Pegado al borde derecho del contenedor */
+  background-color: pink; /* Fondo rosa */
+  padding: 5px; /* Espacio interno alrededor del contenido */
 }
 
-.productos-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.fixed {
+  position: fixed; /* Posición fija respecto a la ventana del navegador */
+  bottom: 10px; /* A 10px del borde inferior de la ventana */
+  right: 10px; /* A 10px del borde derecho de la ventana */
+  background-color: orange; /* Fondo naranja */
+  padding: 5px; /* Espacio interno */
+  z-index: 999; /* Capa superior para que se vea por encima de otros elementos */
 }
 
-.producto {
-    text-align: center;
+.sticky-container {
+  height: 200px; /* Altura fija del contenedor */
+  overflow: auto; /* Habilita scroll si el contenido desborda */
+  margin-top: 20px; /* Espacio externo superior */
+  border: 1px solid #ccc; /* Borde gris claro */
 }
 
-.producto img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.sticky {
+  position: sticky; /* Posición que se mantiene fija al llegar al top indicado */
+  top: 0; /* Se pega al borde superior del contenedor al hacer scroll */
+  background-color: lightgreen; /* Fondo verde claro */
+  padding: 5px; /* Espacio interno */
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+/* === 3. SELECTORES AVANZADOS === */
+.padre p {
+  color: red; /* Cambia el color a rojo de todos los <p> dentro de un elemento con clase .padre (descendientes) */
 }
 
-input,
-textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-
+.padre > .hijo {
+  color: blue; /* Cambia el color a azul del hijo directo con clase .hijo dentro de .padre */
 }
 
-button {
-    padding: 10px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer
+.hermano1 + .hermano2 {
+  font-weight: bold; /* Aplica negrita al elemento .hermano2 que sigue inmediatamente a .hermano1 */
 }
 
-footer{
-    background-color: #333;
-    color:white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 30px;
+.hermano1 ~ .hermano2 {
+  text-decoration: underline; /* Subraya todos los elementos .hermano2 que están después de .hermano1 como hermanos */
 }
 
-/* media query para celulares (pantalla pequeñas hasta 600px) */
-@media (max-width:600px){
-header {
-    background-color: #FF5733;
-    }
-
-nav ul {
-    flex-direction: column;
-    gap:10px
+/* === 4 y 5. FLEXBOX === */
+.contenedor-flex {
+  display: flex; /* Convierte el contenedor en un flexbox */
+  flex-direction: row; /* Dirección principal horizontal (por defecto) */
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+  justify-content: space-around; /* Distribuye los elementos dejando espacio alrededor de ellos */
+  align-items: center; /* Centra verticalmente los ítems dentro del contenedor */
+  border: 1px solid black; /* Borde negro */
+  height: 150px; /* Altura del contenedor */
+  margin-top: 20px; /* Espacio externo en la parte superior */
 }
 
-.productos-container{
-   flex-direction: column; 
-   align-items: center;
+.item {
+  background-color: #ddd; /* Fondo gris claro */
+  padding: 10px; /* Espacio interno */
+  margin: 5px; /* Espacio externo entre los ítems */
+  flex-grow: 1; /* Los ítems crecerán para ocupar el espacio disponible */
+  flex-basis: 100px; /* Tamaño base del ítem antes de aplicar crecimiento */
 }
-}
-
-@media (min-width:601px) and (max-width:900px) {
-    .productos-container{
-   justify-content: space-evenly;
-}
-header {
-    background-color: #900C3F ;
-    }
- } 
-
- @media (min-width:901px) {
-    .productos-container{
-   justify-content:space-between;
-}
-
- } 

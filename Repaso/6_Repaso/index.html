@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Pre-Entrega</title>
+</head>
+<body>
+<header>
+    <h1>Mi Sitio Web</h1>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="inicio">
+        <h2>Bienvenid@s</h2>
+        <img src="https://picsum.photos/800/400" alt="imagen de bienvenida">
+        <p>Descrubrì nuestro productos exclusivos</p>
+    </section>
+
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="https://picsum.photos/150" alt="producto 1">
+                <p>Producto 1</p>
+            </div>
+               <div class="producto">
+                <img src="https://picsum.photos/150" alt="producto 2">
+                <p>Producto 2</p>
+            </div>
+               <div class="producto">
+                <img src="https://picsum.photos/150" alt="producto 3">
+                <p>Producto 3</p>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="correo">Correo Electronico</label>
+            <input type="email" name="correo" id="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p> &copy; 2025 Mi sitio Web</p>
+</footer>
+</body>
+</html>

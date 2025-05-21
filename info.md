@@ -56,3 +56,6 @@ Repaso 5
 https://fonts.google.com/
 https://fontawesome.com/
 
+Repaso 6
+
+https://picsum.photos/800/400

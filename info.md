@@ -59,3 +59,53 @@ https://fontawesome.com/
 Repaso 6
 
 https://picsum.photos/800/400
+
+Clase 9:
+Box-sizing : ej: border-box
+
+tipos de medio
+screen : para pantallas ( es lo mas comun)
+print: para cuando la persona imprime la pagina
+all: para todos los medios(pantallas, impresion,etc)
+
+tamaños pantallas : breakpoints
+
+/* Celulares pequeños (por ejemplo iPhone SE) */
+@media (max-width: 480px) {}
+
+/* Celulares normales */
+@media (max-width: 600px) {}
+
+/* Tablets (modo vertical y horizontal) */
+@media (max-width: 768px) {} 
+@media (max-width: 992px) {}
+
+/* Laptops */
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+/* Monitores grandes */
+@media (min-width: 1201px) {}
+
+/* Smart TVs o pantallas ultra grandes */
+@media (min-width: 1920px) {}
+
+https://www.mydevice.io/
+
+
+GRID
+4. Conceptos Básicos de Grid
+grid-template-columns: define cuántas columnas y su tamaño.
+
+grid-template-rows: define las filas.
+
+gap: espacio entre celdas.
+
+grid-column, grid-row: posicionan elementos en la grilla.
+5. Propiedades Importantes en Grid
+Propiedad	Función
+grid-template-areas	Define áreas con nombre
+grid-column	Cuántas columnas ocupa un ítem
+grid-row	Cuántas filas ocupa
+justify-items	Alinea elementos horizontalmente
+align-items	Alinea elementos verticalmente
+

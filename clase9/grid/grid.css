@@ -1,0 +1,15 @@
+.item{
+    background-color: lightcoral;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ; crea 2 columnas del mismo ancho */
+    gap:10px ; /* espacio entre filas y columnas */
+}
+

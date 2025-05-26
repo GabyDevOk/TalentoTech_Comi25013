@@ -1,0 +1,61 @@
+/* Estilos bases para todas las pantallas */
+body {
+    margin :0;
+    font-family: sans-serif;
+}
+
+.contenedor{
+    display: flex; /* usamos Flexbox para organizar las cajas */
+    flex-direction: row; /* por defecto , en fila */
+    justify-content: space-around;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.caja{
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100px;
+    border-radius:10px;
+}
+
+/* Media Queries */
+
+/* Media Query para CELULARES */
+@media (max-width:600px){
+    .contenedor{
+     flex-direction: column;
+     background-color: lightcoral;
+     align-items: center;
+/*      gap:10px */
+    }
+    .caja{
+        width: 80%;  /*  que ocupen mas espacio horizontal */
+        margin-bottom: 10px;
+    }
+}
+/* Media Query para TABLET */
+@media (min-width:601px) and (max-width:1024px){
+    .contenedor{
+         background-color: lightgoldenrodyellow;
+         flex-direction: row; 
+         flex-wrap: wrap; /* los items pueden bajar sino entran */
+         justify-content: center;
+        }
+        .caja{
+            width: 45%;
+            margin: 10px;
+        }
+}
+/* Media Query para PC */
+@media (min-width:1025px) {
+    .contenedor{
+        background-color: lightgreen;
+    }
+    .caja{
+        width: 150px;
+    }
+    
+}

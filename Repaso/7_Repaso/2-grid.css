@@ -1,0 +1,52 @@
+/* Estilos CSS embebidos */
+
+    .layout {
+      display: grid; /* Activamos el sistema Grid */
+      grid-template-areas: 
+        "header header"     /* Fila 1: el header ocupa 2 columnas */
+        "main aside"        /* Fila 2: main a la izquierda, aside a la derecha */
+        "footer footer";    /* Fila 3: footer ocupa 2 columnas */
+
+      grid-template-columns: 2fr 1fr; /* 2 columnas: principal y barra lateral */
+      grid-template-rows: auto 1fr auto; /* Alturas de filas: header y footer automáticas, el contenido se expande */
+      gap: 10px; /* Espacio entre las celdas del grid */
+    }
+
+    header {
+      grid-area: header; /* Coloca este elemento en el área llamada "header" */
+      background: #2196F3; /* Fondo azul */
+      color: white; /* Texto blanco */
+      padding: 10px; /* Espacio interno */
+    }
+
+    main {
+      grid-area: main; /* Área principal de contenido */
+      background: #e0f7fa; /* Fondo celeste claro */
+      padding: 10px;
+    }
+
+    aside {
+      grid-area: aside; /* Área de la barra lateral */
+      background: #ffccbc; /* Fondo salmón claro */
+      padding: 10px;
+    }
+
+    footer {
+      grid-area: footer; /* Área del pie de página */
+      background: #607d8b; /* Fondo gris oscuro */
+      color: white;
+      padding: 10px;
+    }
+
+      /* 📱 Media Query para pantallas chicas (celulares) */
+
+    @media (max-width: 768px) {
+      .layout {
+        grid-template-areas:
+          "header"
+          "main"
+          "aside"
+          "footer"; /* Cada sección ocupa toda la fila */
+        grid-template-columns: 1fr; /* Solo una columna */
+      }
+    }

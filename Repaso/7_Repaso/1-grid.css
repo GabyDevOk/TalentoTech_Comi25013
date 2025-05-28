@@ -1,0 +1,18 @@
+    /* Comienza el bloque de estilos CSS */
+
+    .grid-container {
+      display: grid; /* Activa el sistema de diseño Grid */
+      grid-template-columns: 1fr 1fr 1fr; /* Crea 3 columnas de igual tamaño */
+      grid-template-rows: auto; /* Las filas se ajustan a la altura del contenido */
+      gap: 10px; /* Espacio entre columnas y filas */
+      padding: 10px; /* Espacio interno alrededor de todo el contenedor */
+      background-color: #ccc; /* Color de fondo gris claro */
+    }
+
+    .grid-item {
+      background-color: #4caf50; /* Color de fondo verde */
+      color: white; /* Texto en color blanco */
+      padding: 20px; /* Espacio interno en cada caja */
+      font-size: 18px; /* Tamaño del texto */
+      text-align: center; /* Alinea el texto al centro horizontalmente */
+    }

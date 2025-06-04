@@ -109,3 +109,8 @@ grid-row	Cuántas filas ocupa
 justify-items	Alinea elementos horizontalmente
 align-items	Alinea elementos verticalmente
 
+
+
+8 Repaso : 
+https://git-scm.com/downloads
+https://nodejs.org/es

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Ecommerce</title>
+</head>
+<body>
+  <!--   Encabezado principal -->
+     <header>
+        <h1>Ecommerce</h1><!--  Titulo del sitio -->
+      <!--   icono del carrito , con enlace a la pagina del carrito -->
+         <a href="carrito.html" class="icono-carrito">🛒 <span id="contador-carrito">0</span></a>
+     </header>
+
+<!--      Barra de navegacion principal -->
+      <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+    <!--   seccion de productos -->
+       <section id="productos" class="productos">
+       <!--  producto con descripcion , precio y bton para agregar al carrito -->
+         <article class="producto">
+            <h2>Producto 1</h2>
+            <p>Descripcion del producto</p>
+            <p class="precio">$100</p>
+            <button onclick="agregarAlcarrito('Producto 1', 100)" >Agregar</button>
+         </article>
+
+                <!--  producto con descripcion , precio y bton para agregar al carrito -->
+                <article class="producto">
+                    <h2>Producto 2</h2>
+                    <p>Descripcion del producto 2</p>
+                    <p class="precio">$200</p>
+                    <button onclick="agregarAlcarrito('Producto 2', 200)" >Agregar</button>
+                 </article>
+
+       </section>
+
+ <script src="./index.js"></script>
+    
+</body>
+</html>

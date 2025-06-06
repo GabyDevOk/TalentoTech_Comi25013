@@ -1,0 +1,84 @@
+/* --- Estilos básicos y reinicio de márgenes --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* --- Encabezado (Header) --- */
+header {
+    display: flex; /* Distribución flexible */
+    justify-content: space-between; /* Elementos separados */
+    align-items: center; /* Alineación vertical */
+    background: #333; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+header h1 {
+    font-size: 24px; /* Tamaño del título */
+}
+
+.icono-carrito {
+    color: white; /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* --- Navegación principal --- */
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    background: #555; /* Fondo oscuro */
+    padding: 10px; /* Espaciado interno */
+}
+
+nav ul li {
+    display: inline; /* Elementos en línea */
+    margin-right: 15px; /* Separación entre enlaces */
+}
+
+nav ul li a {
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* --- Estilos de productos --- */
+.productos {
+    display: grid; /* Distribución en cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático */
+    gap: 20px; /* Separación entre productos */
+    margin-top: 20px; /* Margen superior */
+}
+
+.producto {
+    background: #f4f4f4; /* Fondo claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+}
+
+.producto h2 {
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.producto .precio {
+    color: green; /* Texto en color verde */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+.producto button {
+    background: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Mano al pasar por encima */
+}
+
+.producto button:hover {
+    background: #555; /* Cambio de color al pasar el cursor */
+}

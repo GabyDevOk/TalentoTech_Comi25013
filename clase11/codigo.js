@@ -90,7 +90,9 @@ alert("el resultado de tu operacion es " + result);
 /* % modulo (resto de la división) */
 /* % ES EL RESTO DE UNA DIVISION */
 
-/* let nombre2 = true
+/* 
+Saber el tipo de dato
+let nombre2 = true
 console.log(typeof nombre2); */
 
 
@@ -186,7 +188,7 @@ if (edad >= 18 || nombre.length >= 6) {
 }
 
 /*  Switch */
-let semaforo = "verdes";
+let semaforo = "verde";
 
 switch (semaforo) {
   case "rojo":

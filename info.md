@@ -114,3 +114,14 @@ align-items	Alinea elementos verticalmente
 8 Repaso : 
 https://git-scm.com/downloads
 https://nodejs.org/es
+
+9 Repaso
+
+refacctorizar ejemplos a interacciones con users
+
+
+/*  ejemplo java */
+/*  int edad = 20
+ String resultado = (edad>=18? "Sos Mayor": "Sos Menor")
+
+poner la salida de (resultado) */
